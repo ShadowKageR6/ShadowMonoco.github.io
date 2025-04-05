@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced Monoco Tab System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="tab-container">
+        <button class="tab-button active" data-tab="tab1">Script 1</button>
+        <button class="tab-button" data-tab="tab2">Script 2</button>
+        <button class="tab-button" data-tab="tab3">Options</button>
+    </div>
+
+    <div id="tab1" class="tab-content active">
+        <textarea id="script1-textarea"></textarea>
+        <button onclick="executeScript('script1-textarea')">Execute</button>
+        <div id="console-output"></div>
+    </div>
+
+    <div id="tab2" class="tab-content">
+        <textarea id="script2-textarea"></textarea>
+        <button onclick="executeScript('script2-textarea')">Execute</button>
+        <div id="console-output2"></div>
+    </div>
+
+    <div id="tab3" class="tab-content">
+        <p>Options Page</p>
+        <label for="option1">Option 1:</label>
+        <input type="checkbox" id="option1"><br>
+        <label for="option2">Option 2:</label>
+        <input type="text" id="option2">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
